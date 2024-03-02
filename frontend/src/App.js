@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Home from "../Component/Home.js";
+import Home from "./Components/Home.js";
 import "./App.css";
 import {
   BrowserRouter as Router,
