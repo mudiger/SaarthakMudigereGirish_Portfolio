@@ -20,18 +20,22 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <Router>
-      <div className="App">
-        <NavigationBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="/project" element={<Projects />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="*" element={<Navigate to="/"/>} /> */}
-        </Routes>
-      </div>
-    </Router>
+    <div className="App">
+      {/* <NavigationBar /> */}
+      <Home />
+    </div>
+    // <Router>
+    //   <div className="App">
+    //     <NavigationBar />
+    //     <Routes>
+    //       <Route path="/" element={<Home />} />
+    //       {/* <Route path="/project" element={<Projects />} />
+    //         <Route path="/about" element={<About />} />
+    //         <Route path="/resume" element={<Resume />} />
+    //         <Route path="*" element={<Navigate to="/"/>} /> */}
+    //     </Routes>
+    //   </div>
+    // </Router>
   );
 }
 
