@@ -1,8 +1,13 @@
 import React from "react";
+import About from "./about";
 
 function Home() {
   return (
-    <h1>This is Saarthak!</h1>
+    <div>
+      <h1>Home</h1>
+      <About />
+    </div>
+    // <h1>This is Saarthak!</h1>
     // <section>
     //   <Container fluid className="home-section" id="home">
     //     <Particle />
