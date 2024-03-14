@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Home from "./Components/Home.js";
+import NavigationBar from "./Components/NavBar.js";
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -21,6 +22,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <NavigationBar />
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/project" element={<Projects />} />
