@@ -24,7 +24,7 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.5 }}
           >
             <img
-              src="../../../public/logo192.PNG"
+              src="@/public/logo192.PNG"
               alt="Umesh Chandra Photo"
               width="192"
               height="192"
