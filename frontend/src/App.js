@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Home from "./Components/Home.js";
+import Header from "./Components/Header.js";
 import NavigationBar from "./Components/NavBar.js";
 import "./App.css";
 import {
@@ -23,6 +24,7 @@ function App() {
     <div className="App">
       {/* <NavigationBar /> */}
       <Home />
+      <Header />
     </div>
     // <Router>
     //   <div className="App">
