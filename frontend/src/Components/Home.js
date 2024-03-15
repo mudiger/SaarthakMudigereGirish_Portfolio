@@ -1,9 +1,11 @@
 import React from "react";
-import About from "./HomeComponents/about";
+import Intro from "./HomeComponents/intro.js";
+import About from "./HomeComponents/about.js";
 
 function Home() {
   return (
     <div>
+      <Intro />
       <About />
     </div>
   );
