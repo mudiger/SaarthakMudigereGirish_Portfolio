@@ -4,7 +4,7 @@ export default function Header() {
   const [activeSection, setActiveSection] = useState("intro");
 
   return (
-    <header className="flex items-center justify-between px-4 py-6">
+    <header className="text-gray-900 bg-white flex items-center justify-between px-4 py-6">
       <h1 className="text-2xl font-bold">My Portfolio</h1>
       <nav>
         <ul className="flex space-x-4">
@@ -12,7 +12,9 @@ export default function Header() {
             <a
               href="#intro"
               className={`${
-                activeSection === "intro" ? "text-blue-500" : "text-gray-500"
+                activeSection === "intro"
+                  ? "text-blue-500 underline"
+                  : "text-gray-500"
               } hover:text-blue-500`}
               onClick={() => setActiveSection("intro")}
             >
@@ -23,7 +25,9 @@ export default function Header() {
             <a
               href="#about"
               className={`${
-                activeSection === "about" ? "text-blue-500" : "text-gray-500"
+                activeSection === "about"
+                  ? "text-blue-500 underline"
+                  : "text-gray-500"
               } hover:text-blue-500`}
               onClick={() => setActiveSection("about")}
             >
@@ -34,7 +38,9 @@ export default function Header() {
             <a
               href="#projects"
               className={`${
-                activeSection === "projects" ? "text-blue-500" : "text-gray-500"
+                activeSection === "projects"
+                  ? "text-blue-500 underline"
+                  : "text-gray-500"
               } hover:text-blue-500`}
               onClick={() => setActiveSection("projects")}
             >
@@ -45,7 +51,9 @@ export default function Header() {
             <a
               href="#skills"
               className={`${
-                activeSection === "skills" ? "text-blue-500" : "text-gray-500"
+                activeSection === "skills"
+                  ? "text-blue-500 underline"
+                  : "text-gray-500"
               } hover:text-blue-500`}
               onClick={() => setActiveSection("skills")}
             >
@@ -57,7 +65,7 @@ export default function Header() {
               href="#experience"
               className={`${
                 activeSection === "experience"
-                  ? "text-blue-500"
+                  ? "text-blue-500 underline"
                   : "text-gray-500"
               } hover:text-blue-500`}
               onClick={() => setActiveSection("experience")}
@@ -70,7 +78,7 @@ export default function Header() {
               href="#education"
               className={`${
                 activeSection === "education"
-                  ? "text-blue-500"
+                  ? "text-blue-500 underline"
                   : "text-gray-500"
               } hover:text-blue-500`}
               onClick={() => setActiveSection("education")}
@@ -82,7 +90,9 @@ export default function Header() {
             <a
               href="#contact"
               className={`${
-                activeSection === "contact" ? "text-blue-500" : "text-gray-500"
+                activeSection === "contact"
+                  ? "text-blue-500 underline"
+                  : "text-gray-500"
               } hover:text-blue-500`}
               onClick={() => setActiveSection("contact")}
             >
