@@ -1,9 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import Link from "next/link";
-// import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-// import { HiDownload } from "react-icons/hi";
-// import { FaGithubSquare } from "react-icons/fa";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaGithubSquare } from "react-icons/fa";
 // import { useSectionInView } from "../../lib/hooks.js";
 // import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -14,7 +13,7 @@ export default function Intro() {
     <section
       //   ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[80rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div>
@@ -24,8 +23,8 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.5 }}
           >
             <img
-              src="@/public/logo192.PNG"
-              alt="Umesh Chandra Photo"
+              src="../SaarthakMudigereGirish.jpeg"
+              alt="Saarthak Mudigere Girish"
               width="192"
               height="192"
               quality="95"
@@ -41,7 +40,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">
-          Hello, I&apos;m Umesh Chandra Karagatla.
+          Hello, I&apos;m Saarthak Mudigere Girish.
         </span>
         <br></br>A <span className="font-bold">Computer Science graduate</span>{" "}
         with a keen interest in{" "}
@@ -50,13 +49,13 @@ export default function Intro() {
         for learning and a collaborative team spirit.
       </motion.h1>
 
-      {/* <motion.div
+      <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
       >
-        <Link
+        {/* <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
@@ -66,7 +65,7 @@ export default function Intro() {
         >
           Contact me here
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link>
+        </Link> */}
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
@@ -79,7 +78,7 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
-          href="https://www.linkedin.com/in/umeshchandrakaragatla/"
+          href="https://www.linkedin.com/in/mudigere/"
           target="_blank"
         >
           <BsLinkedin />
@@ -87,12 +86,12 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
-          href="https://github.com/uc13010"
+          href="https://github.com/mudiger"
           target="_blank"
         >
           <FaGithubSquare />
         </a>
-      </motion.div> */}
+      </motion.div>
     </section>
   );
 }

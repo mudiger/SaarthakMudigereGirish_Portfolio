@@ -1,22 +1,26 @@
-import React, { useRef } from "react";
-// import { motion } from "framer-motion";
+import React from "react";
+// import SectionHeading from './section-heading'
+import { motion } from "framer-motion";
+// import { useSectionInView } from '@/lib/hooks'
 
 export default function About() {
-  const ref = useRef(null);
-
+  // const { ref } = useSectionInView("About", 0.8);
   return (
-    <section
-      ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+    <motion.section
+      // ref={ref}
+      className="mb-28 max-w-[80rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <h2 ref={ref}>About me</h2>
+      <h2 className="text-3xl font-medium capitalize mb-8 text-center">
+        About me
+      </h2>
       <p className="mb-3">
-        I'm currently a <span className="font-medium"> Computer Science </span>{" "}
-        Master's student at the{" "}
+        I&apos;m currently a{" "}
+        <span className="font-medium"> Computer Science </span> Master&apos;s
+        student at the{" "}
         <span className="font-medium">University of Texas at Arlington</span>{" "}
         (UTA), driven by an unwavering passion for technology and innovation. My
         journey began when I embarked on a{" "}
@@ -28,17 +32,17 @@ export default function About() {
       </p>
 
       <p>
-        Throughout my carreer, I've meticulously cultivated my expertise across
-        diverse domains, including{" "}
+        Throughout my carreer, I&apos;ve meticulously cultivated my expertise
+        across diverse domains, including{" "}
         <span className="font-medium">Full Stack Web Development</span>,{" "}
         <span className="font-medium">DevOps</span>, and{" "}
         <span className="font-medium">Machine Learning</span>. My commitment to
-        knowledge expansion is unwavering, as Icontinually seek opportunities to
-        broaden my horizons and deepen my proficiency in these areas. As I
-        embark on thenext chapter of my career, I am enthusiastic about
-        applyingmy well-rounded skill set to real-world challenges and driving
+        knowledge expansion is unwavering, as I continually seek opportunities
+        to broaden my horizons and deepen my proficiency in these areas. As I
+        embark on the next chapter of my career, I am enthusiastic about
+        applying my well-rounded skill set to real-world challenges and driving
         innovation in the world of technology.
       </p>
-    </section>
+    </motion.section>
   );
 }
